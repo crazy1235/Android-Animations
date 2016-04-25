@@ -2,4 +2,4 @@
 
 ## Property Animation
 
-## Transitino Animation
+## Transition Animation
