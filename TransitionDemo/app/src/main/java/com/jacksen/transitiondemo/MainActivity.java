@@ -3,6 +3,8 @@ package com.jacksen.transitiondemo;
 import android.os.Build;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.transition.ChangeBounds;
+import android.transition.ChangeImageTransform;
 import android.transition.Scene;
 import android.transition.TransitionManager;
 import android.view.View;
@@ -39,10 +41,10 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {
                     if (flag) {
-                        TransitionManager.go(aScene);
+                        TransitionManager.go(aScene, new ChangeBounds());
                         flag = false;
                     } else {
-                        TransitionManager.go(bScene);
+                        TransitionManager.go(bScene, new ChangeBounds());
                         flag = true;
                     }
                 }
