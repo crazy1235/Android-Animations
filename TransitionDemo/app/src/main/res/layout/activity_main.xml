@@ -12,6 +12,12 @@
         android:layout_height="wrap_content"
         android:text="next scene" />
 
+    <Button
+        android:id="@+id/movie_list_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/movie_list" />
+
     <FrameLayout
         android:id="@+id/scene_root"
         android:layout_width="match_parent"
